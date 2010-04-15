@@ -29,9 +29,9 @@ module Juixe
       # This module contains instance methods
       module InstanceMethods
         def vote( vote=:up, user=User.current )
-          return if voted_by_user? user
+#          return if voted_by_user? user
           Vote.create( :voteable => self, :vote => vote == :up, :user => user ) 
-          self.votes_value += vote == :up ? 1:-1;
+          self.votes_value += (vote == :up ? 1:-1)
         end
         def votes_for
           self.votes.select{|v| v.vote}.size

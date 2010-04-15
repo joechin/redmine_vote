@@ -1,4 +1,4 @@
-.icon-vote-up { background-image: url(../images/arrow_090.png); }
-.icon-vote-down { background-image: url(../images/arrow_270.png); }
+.icon-vote-up { background-image: url(../images/arrow_up.png); margin-left:5px;}
+.icon-vote-down { background-image: url(../images/arrow_down.png); }
 span.votes-positive { color: green; font-weight: bold }
 span.votes-negative { color: red; font-weight: bold }
